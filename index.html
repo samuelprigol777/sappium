@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sappium | Soluções Digitais Sob Medida</title>
+    <meta name="description" content="Sappium - Soluções digitais sob medida para escalar seu negócio. Tráfego pago, landing pages e automações que geram resultados reais.">
+    <meta name="keywords" content="tráfego pago, landing pages, CRM, automações, marketing digital, Google Ads, Meta Ads, agência digital">
+    <meta name="author" content="Sappium">
+    <meta property="og:title" content="Sappium | Soluções Digitais Sob Medida">
+    <meta property="og:description" content="Transformamos cliques em clientes. Tráfego pago, landing pages e automações que geram resultados reais.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sappium.com.br">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sappium.com.br">
+
+    <!-- Enhanced SEO -->
+    <meta name="geo.region" content="BR-RS">
+    <meta name="geo.placename" content="Erechim">
+    <meta name="geo.position" content="-27.6341;-52.2753">
+    <meta name="ICBM" content="-27.6341, -52.2753">
+    <meta name="language" content="pt-BR">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph Enhanced -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Sappium">
+    <meta property="og:image" content="https://sappium.com.br/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sappium | Soluções Digitais Sob Medida">
+    <meta name="twitter:description" content="Transformamos cliques em clientes. Tráfego pago, landing pages e CRMs personalizados.">
+    <meta name="twitter:image" content="https://sappium.com.br/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════════
+           RESET & BASE
+           ═══════════════════════════════════════════════ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #06060b;
+            --bg-secondary: #0c0c14;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-hover: rgba(255, 255, 255, 0.06);
+            --accent: #ef4444;
+            --accent-light: #f97316;
+            --accent-dark: #dc2626;
+            --purple: #f97316;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(239, 68, 68, 0.3);
+            --glow: rgba(239, 68, 68, 0.15);
+            --gradient: linear-gradient(135deg, #ef4444, #f97316);
+            --gradient-subtle: linear-gradient(135deg, rgba(239,68,68,0.1), rgba(249,115,22,0.1));
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.15;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ═══════════════════════════════════════════════
+           SCROLL REVEAL ANIMATIONS
+           ═══════════════════════════════════════════════ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+        .reveal-delay-6 { transition-delay: 0.6s; }
+
+        /* ═══════════════════════════════════════════════
+           SECTION COMMON
+           ═══════════════════════════════════════════════ */
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-light);
+            margin-bottom: 16px;
+            padding: 6px 16px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            border-radius: 100px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        /* ═══════════════════════════════════════════════
+           HERO
+           ═══════════════════════════════════════════════ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 60px 24px;
+            overflow: hidden;
+        }
+
+        /* Animated gradient background */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at 30% 20%, rgba(239,68,68,0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 60%, rgba(249,115,22,0.06) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 80%, rgba(239,68,68,0.04) 0%, transparent 50%);
+            animation: heroGradient 20s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes heroGradient {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(2%, -2%) rotate(1deg); }
+            66% { transform: translate(-1%, 1%) rotate(-1deg); }
+        }
+
+        /* Floating geometric shapes */
+        .hero-shapes {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.03;
+            background: var(--accent);
+            filter: blur(1px);
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            top: 10%;
+            right: -5%;
+            animation: float1 25s ease-in-out infinite;
+            background: linear-gradient(135deg, var(--accent), var(--purple));
+        }
+
+        .shape-2 {
+            width: 250px;
+            height: 250px;
+            bottom: 15%;
+            left: -3%;
+            animation: float2 20s ease-in-out infinite;
+            background: var(--purple);
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            top: 30%;
+            left: 15%;
+            animation: float3 15s ease-in-out infinite;
+            border-radius: 30%;
+            background: var(--accent);
+            opacity: 0.02;
+        }
+
+        .shape-4 {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            right: 20%;
+            animation: float2 18s ease-in-out infinite reverse;
+            border-radius: 20%;
+            background: var(--purple);
+            opacity: 0.025;
+        }
+
+        @keyframes float1 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(-30px, 30px) rotate(10deg); }
+        }
+
+        @keyframes float2 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, -20px) rotate(-10deg); }
+        }
+
+        @keyframes float3 {
+            0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            50% { transform: translate(15px, 20px) rotate(45deg) scale(1.1); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 860px;
+        }
+
+        .hero-logo {
+            max-width: 180px;
+            margin: 0 auto 24px;
+            animation: logoFadeIn 1s ease-out both;
+        }
+
+        @keyframes logoFadeIn {
+            from { opacity: 0; transform: scale(0.85); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--accent-light);
+            margin-bottom: 32px;
+            font-weight: 500;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-badge span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.5); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 40%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease-out 0.1s both;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: var(--text-secondary);
+            max-width: 640px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 40px;
+            background: var(--gradient);
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.3), 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .hero-cta:hover::before {
+            opacity: 1;
+        }
+
+        .hero-cta span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 60px rgba(239, 68, 68, 0.4), 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .hero-social-proof {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 48px;
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+
+        .proof-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding: 10px 18px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            backdrop-filter: blur(10px);
+        }
+
+        .proof-badge strong {
+            color: var(--text-primary);
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: fadeInUp 0.8s ease-out 0.7s both;
+            z-index: 1;
+        }
+
+        .scroll-arrow {
+            width: 24px;
+            height: 38px;
+            border: 2px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .scroll-arrow::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 3px;
+            animation: scrollBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollBounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+            50% { transform: translateX(-50%) translateY(10px); opacity: 0.3; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ═══════════════════════════════════════════════
+           METRICS BAR
+           ═══════════════════════════════════════════════ */
+        .metrics {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        .metrics::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(239,68,68,0.03), transparent 70%);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+        }
+
+        .metric-item {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .metric-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* ═══════════════════════════════════════════════
+           SERVICES
+           ═══════════════════════════════════════════════ */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            position: relative;
+            padding: 40px 32px;
+            border-radius: var(--radius);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius);
+            background: radial-gradient(ellipse at 50% 0%, var(--glow), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .service-card:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ═══════════════════════════════════════════════
+           HOW IT WORKS
+           ═══════════════════════════════════════════════ */
+        .steps-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            position: relative;
+        }
+
+        .steps-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 44px;
+            left: calc(16.66% + 24px);
+            right: calc(16.66% + 24px);
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--purple));
+            opacity: 0.3;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background: var(--gradient-subtle);
+            border: 2px solid rgba(239, 68, 68, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-count {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .step h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        /* ═══════════════════════════════════════════════
+           RESULTS SHOWCASE
+           ═══════════════════════════════════════════════ */
+        .results {
+            background: var(--bg-secondary);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .result-card {
+            padding: 36px 32px;
+            border-radius: var(--radius);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .result-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .result-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .result-category {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-light);
+            margin-bottom: 16px;
+        }
+
+        .result-metric {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .result-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        /* ═══════════════════════════════════════════════
+           DIFFERENTIALS
+           ═══════════════════════════════════════════════ */
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .diff-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 28px 24px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .diff-item:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+        }
+
+        .diff-check {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: var(--gradient-subtle);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem;
+            color: var(--accent-light);
+        }
+
+        .diff-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ═══════════════════════════════════════════════
+           FAQ
+           ═══════════════════════════════════════════════ */
+        .faq {
+            background: var(--bg-secondary);
+        }
+
+        .faq-list {
+            max-width: 720px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            border-color: var(--border-hover);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            text-align: left;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--accent-light);
+        }
+
+        .faq-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.3s;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .faq-answer-inner {
+            padding: 0 28px 22px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+
+        /* ═══════════════════════════════════════════════
+           LEAD FORM
+           ═══════════════════════════════════════════════ */
+        .form-section {
+            padding: 120px 0;
+        }
+
+        .form-wrapper {
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 48px 40px;
+            border-radius: var(--radius);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: var(--radius);
+            background: var(--gradient);
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .form-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 1px;
+            border-radius: calc(var(--radius) - 1px);
+            background: var(--bg-secondary);
+            z-index: -1;
+        }
+
+        .form-title {
+            font-size: clamp(1.6rem, 3vw, 2rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-sub {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 36px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .form-group input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748b' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 44px;
+        }
+
+        .form-group select option {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: var(--radius-sm);
+            background: var(--gradient);
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .form-submit:hover::before {
+            opacity: 1;
+        }
+
+        .form-submit span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.3);
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .form-note strong {
+            color: var(--text-secondary);
+        }
+
+        /* ═══════════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════════ */
+        .footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ═══════════════════════════════════════════════
+           FLOATING WHATSAPP
+           ═══════════════════════════════════════════════ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            cursor: pointer;
+            animation: whatsappPulse 3s ease-in-out infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+
+        @keyframes whatsappPulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 12px rgba(37, 211, 102, 0.08); }
+        }
+
+        /* ═══════════════════════════════════════════════
+           NICHOS SECTION
+           ═══════════════════════════════════════════════ */
+        .nichos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .nicho-pill {
+            padding: 10px 22px;
+            border-radius: 100px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .nicho-pill:hover {
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+            color: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════════════════════════════════════
+           SOBRE / ABOUT SECTION
+           ═══════════════════════════════════════════════ */
+        .sobre-content {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .sobre-photo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .sobre-photo-frame {
+            width: 280px;
+            height: 280px;
+            border-radius: 24px;
+            padding: 4px;
+            background: var(--gradient);
+            box-shadow: 0 0 40px rgba(239, 68, 68, 0.2), 0 0 80px rgba(249, 115, 22, 0.1);
+            position: relative;
+        }
+
+        .sobre-photo-frame::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border-radius: 28px;
+            background: var(--gradient);
+            opacity: 0.15;
+            filter: blur(20px);
+            z-index: -1;
+        }
+
+        .sobre-photo-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .sobre-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-top: 8px;
+        }
+
+        .sobre-role {
+            font-size: 0.9rem;
+            color: var(--accent-light);
+            font-weight: 500;
+        }
+
+        .sobre-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .sobre-bio {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .sobre-certs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .cert-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--gradient-subtle);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-light);
+        }
+
+        .sobre-event {
+            margin-top: 8px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            max-width: 480px;
+        }
+
+        .sobre-event img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .sobre-event-caption {
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            text-align: center;
+        }
+
+        /* ═══════════════════════════════════════════════
+           RESPONSIVE
+           ═══════════════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .services-grid,
+            .results-grid,
+            .steps-wrapper {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .steps-wrapper::before {
+                display: none;
+            }
+
+            .diff-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .sobre-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .sobre-photo-wrapper {
+                justify-self: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .services-grid,
+            .results-grid,
+            .steps-wrapper,
+            .diff-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .metric-item {
+                padding: 16px;
+            }
+
+            .hero-social-proof {
+                gap: 12px;
+            }
+
+            .proof-badge {
+                font-size: 0.8rem;
+                padding: 8px 14px;
+            }
+
+            .form-wrapper {
+                padding: 36px 24px;
+                margin: 0 8px;
+            }
+
+            .section-header {
+                margin-bottom: 48px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-cta {
+                padding: 16px 32px;
+                font-size: 0.95rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .proof-badge {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .metric-number {
+                font-size: 2rem;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 54px;
+                height: 54px;
+            }
+
+            .whatsapp-float svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    </style>
+
+    <!-- Performance -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preload" as="image" href="logo.png">
+    <link rel="preload" as="image" href="IMG_3396.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Sappium",
+      "alternateName": "Sappium Soluções Digitais",
+      "url": "https://sappium.com.br",
+      "logo": "https://sappium.com.br/logo.png",
+      "description": "Agência de soluções digitais especializada em tráfego pago, landing pages e CRMs personalizados. Certificada Google Ads e Meta Ads.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Erechim",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -27.6341,
+        "longitude": -52.2753
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "serviceType": ["Gestão de Tráfego Pago", "Criação de Landing Pages", "Desenvolvimento de CRM", "Automações de Marketing", "Google Ads", "Meta Ads"],
+      "knowsAbout": ["Marketing Digital", "Tráfego Pago", "Google Ads", "Meta Ads", "Landing Pages", "CRM", "Automação de Marketing", "Geração de Leads"],
+      "founder": {
+        "@type": "Person",
+        "name": "Samuel",
+        "jobTitle": "Gestor de Tráfego & Desenvolvedor"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sappium_agencia/"
+      ],
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa o serviço de tráfego pago?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os valores variam conforme o escopo do projeto. Fazemos uma análise gratuita do seu negócio e apresentamos uma proposta personalizada. O investimento em anúncios é separado dos honorários de gestão."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Em quanto tempo vejo resultados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os primeiros leads podem aparecer nos primeiros dias de campanha. Para resultados consistentes e otimizados, trabalhamos com uma janela de 30-90 dias de otimização contínua."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funciona para meu tipo de negócio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Já atendemos mais de 12 nichos diferentes, incluindo clínicas estéticas, salões de beleza, óticas, e-commerces, infoprodutores e prestadores de serviço em geral."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso entender de marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não! Cuidamos de toda a estratégia, desde a criação dos anúncios até a otimização das campanhas. Você recebe relatórios semanais transparentes e acompanha os resultados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o suporte?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendimento direto e humanizado via WhatsApp. Sem chatbots. Respondemos em até 2 horas durante o horário comercial."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- GEO: AI-readable business summary -->
+    <div itemscope itemtype="https://schema.org/ProfessionalService" style="display:none" aria-hidden="true">
+      <meta itemprop="name" content="Sappium - Agência de Soluções Digitais">
+      <meta itemprop="description" content="Agência digital em Erechim especializada em tráfego pago (Google Ads e Meta Ads), criação de landing pages de alta conversão, e desenvolvimento de CRMs personalizados. Fundada por Samuel, gestor de tráfego certificado Google e Meta com 2 anos de experiência e mais de R$1 milhão faturado para clientes. Atende mais de 12 nichos incluindo clínicas estéticas, salões de beleza, óticas, e-commerces e infoprodutores.">
+      <meta itemprop="url" content="https://sappium.com.br">
+      <meta itemprop="telephone" content="+5554999501820">
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <meta itemprop="addressLocality" content="Erechim">
+        <meta itemprop="addressRegion" content="RS">
+        <meta itemprop="addressCountry" content="BR">
+      </div>
+    </div>
+
+    <main role="main">
+
+    <!-- ═══════════════════════════════════════════════
+         HERO
+         ═══════════════════════════════════════════════ -->
+    <section class="hero" id="hero" role="banner" aria-label="Apresentação principal da Sappium">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <img src="logo.png" alt="Sappium - Soluções Digitais" class="hero-logo">
+            <div class="hero-badge">
+                <span></span>
+                Sappium &mdash; Soluções Digitais Sob Medida
+            </div>
+            <h1>Transformamos Cliques<br>em Clientes</h1>
+            <p class="hero-subtitle">Soluções digitais sob medida para escalar seu negócio. Tráfego pago, landing pages e automações que geram resultados reais.</p>
+            <a href="#formulario" class="hero-cta">
+                <span>Solicitar Orçamento Grátis &rarr;</span>
+            </a>
+            <div class="hero-social-proof">
+                <div class="proof-badge">🚀 <strong>+R$ 1M</strong> Faturado</div>
+                <div class="proof-badge">⚡ <strong>12+</strong> Nichos Atendidos</div>
+                <div class="proof-badge">🏅 <strong>Certificado</strong> Google & Meta</div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         METRICS BAR
+         ═══════════════════════════════════════════════ -->
+    <section class="metrics" id="metricas" aria-label="Métricas e resultados">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-item reveal">
+                    <span class="metric-number">+R$ 1M</span>
+                    <p class="metric-label">Faturado em Projetos</p>
+                </div>
+                <div class="metric-item reveal reveal-delay-1">
+                    <span class="metric-number" data-target="12">0</span>
+                    <span class="metric-suffix">+</span>
+                    <p class="metric-label">Nichos Atendidos</p>
+                </div>
+                <div class="metric-item reveal reveal-delay-2">
+                    <span class="metric-number" data-target="2">0</span>
+                    <p class="metric-label">Anos de Experiência</p>
+                </div>
+                <div class="metric-item reveal reveal-delay-3">
+                    <span class="metric-number" data-target="100">0</span>
+                    <span class="metric-suffix">%</span>
+                    <p class="metric-label">Comprometimento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SERVICES
+         ═══════════════════════════════════════════════ -->
+    <section class="section" id="servicos" aria-label="Nossos serviços">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Nossos Serviços</span>
+                <h2 class="section-title">Tudo que seu negócio precisa<br>para crescer no digital</h2>
+                <p class="section-subtitle">Soluções completas e personalizadas para cada etapa da sua jornada digital.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <span class="service-icon">🎯</span>
+                    <h3>Tráfego Pago</h3>
+                    <p>Campanhas estratégicas no Google Ads e Meta Ads. Certificado oficial em ambas plataformas. +R$ 1M faturado em projetos de lançamentos e tráfego contínuo.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <span class="service-icon">🖥️</span>
+                    <h3>Landing Pages & Sites</h3>
+                    <p>Páginas de alta conversão feitas sob medida. Design profissional que transforma visitantes em clientes.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <span class="service-icon">⚙️</span>
+                    <h3>CRM & Automações</h3>
+                    <p>CRMs personalizados e sistemas de follow-up automático. Tecnologia própria que nenhuma outra agência oferece.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         NICHOS ATENDIDOS
+         ═══════════════════════════════════════════════ -->
+    <section class="section" id="nichos" style="background: var(--bg-secondary);" aria-label="Nichos atendidos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Experiência Diversa</span>
+                <h2 class="section-title">12+ nichos atendidos</h2>
+                <p class="section-subtitle">Cada negócio é único, mas a estratégia certa funciona em qualquer nicho.</p>
+            </div>
+            <div class="nichos-grid reveal">
+                <span class="nicho-pill">Espiritualidade</span>
+                <span class="nicho-pill">Depilação</span>
+                <span class="nicho-pill">Paisagismo</span>
+                <span class="nicho-pill">Venda de Moto</span>
+                <span class="nicho-pill">Ótica Local</span>
+                <span class="nicho-pill">Marca de Cosméticos</span>
+                <span class="nicho-pill">Salão de Beleza</span>
+                <span class="nicho-pill">Ar Condicionado</span>
+                <span class="nicho-pill">Infoproduto de Massagem</span>
+                <span class="nicho-pill">Rifa Ring Necks</span>
+                <span class="nicho-pill">Day Trade</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         HOW IT WORKS
+         ═══════════════════════════════════════════════ -->
+    <section class="section" id="como-funciona" style="background: var(--bg-secondary);" aria-label="Como funciona">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Como Funciona</span>
+                <h2 class="section-title">Simples, rápido e eficiente</h2>
+                <p class="section-subtitle">Em 3 passos, colocamos seu negócio para crescer no digital.</p>
+            </div>
+            <div class="steps-wrapper">
+                <div class="step reveal reveal-delay-1">
+                    <div class="step-number">
+                        📞
+                        <span class="step-count">1</span>
+                    </div>
+                    <h3>Conta seu Desafio</h3>
+                    <p>Entendemos seu negócio, seus objetivos e onde você quer chegar.</p>
+                </div>
+                <div class="step reveal reveal-delay-2">
+                    <div class="step-number">
+                        🎯
+                        <span class="step-count">2</span>
+                    </div>
+                    <h3>Criamos a Solução</h3>
+                    <p>Desenvolvemos a estratégia e as ferramentas sob medida para você.</p>
+                </div>
+                <div class="step reveal reveal-delay-3">
+                    <div class="step-number">
+                        📈
+                        <span class="step-count">3</span>
+                    </div>
+                    <h3>Seu Negócio Cresce</h3>
+                    <p>Acompanhamos os resultados e otimizamos continuamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SOBRE / QUEM ESTÁ POR TRÁS
+         ═══════════════════════════════════════════════ -->
+    <section class="section" id="sobre" aria-label="Sobre a Sappium">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Sobre</span>
+                <h2 class="section-title">Quem está por trás da Sappium?</h2>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-photo-wrapper reveal">
+                    <div class="sobre-photo-frame">
+                        <img src="IMG_3396.jpg" alt="Samuel - Gestor de Tráfego & Desenvolvedor" loading="lazy">
+                    </div>
+                    <h3 class="sobre-name">Samuel</h3>
+                    <span class="sobre-role">Gestor de Tráfego & Desenvolvedor</span>
+                </div>
+                <div class="sobre-text reveal reveal-delay-1">
+                    <p class="sobre-bio">Há 2 anos ajudando negócios a crescer no digital. Membro do <strong>Subido Pro</strong> — a maior mentoria de tráfego pago da América Latina. Certificado em Google Ads e Meta Ads, com mais de R$ 1 milhão faturado em projetos para 12+ nichos diferentes. Meu diferencial? Além de tráfego, eu crio CRMs personalizados e landing pages sob medida — ferramentas que a maioria das agências terceiriza, eu construo do zero.</p>
+                    <div class="sobre-certs">
+                        <span class="cert-badge">🏅 Google Ads Certified</span>
+                        <span class="cert-badge">🏅 Meta Ads Certified</span>
+                        <span class="cert-badge">🚀 Membro Subido Pro</span>
+                    </div>
+                    <div class="sobre-event">
+                        <img src="IMG_1383.jpg" alt="Samuel no Subido ao Vivo 2025" loading="lazy">
+                        <p class="sobre-event-caption">Subido ao Vivo 2025 — Maior evento de tráfego pago do Brasil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         RESULTS SHOWCASE
+         ═══════════════════════════════════════════════ -->
+    <section class="section results" id="resultados" aria-label="Resultados e casos de sucesso">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Cenários de Sucesso</span>
+                <h2 class="section-title">Resultados que falam por si</h2>
+                <p class="section-subtitle">Veja como ajudamos negócios como o seu a crescer no digital.</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card reveal reveal-delay-1">
+                    <span class="result-icon">💄</span>
+                    <span class="result-category">Marca de Cosméticos</span>
+                    <p class="result-metric">Estruturação completa: tráfego + LP + CRM de follow-up automatizado</p>
+                </div>
+                <div class="result-card reveal reveal-delay-2">
+                    <span class="result-icon">👓</span>
+                    <span class="result-category">Ótica Local</span>
+                    <p class="result-metric">Campanha local no Google Ads com captação de leads por WhatsApp</p>
+                </div>
+                <div class="result-card reveal reveal-delay-3">
+                    <span class="result-icon">🚀</span>
+                    <span class="result-category">Infoproduto</span>
+                    <p class="result-metric">Lançamento com funil completo: LP + tráfego + automação de vendas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         DIFFERENTIALS
+         ═══════════════════════════════════════════════ -->
+    <section class="section" id="diferenciais" aria-label="Diferenciais da Sappium">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Diferenciais</span>
+                <h2 class="section-title">Por que escolher a Sappium?</h2>
+                <p class="section-subtitle">Compromisso com resultado, transparência e atendimento humanizado.</p>
+            </div>
+            <div class="diff-grid">
+                <div class="diff-item reveal reveal-delay-1">
+                    <div class="diff-check">✓</div>
+                    <h4>Sem Contrato de Fidelidade</h4>
+                </div>
+                <div class="diff-item reveal reveal-delay-2">
+                    <div class="diff-check">✓</div>
+                    <h4>Certificado Google Ads & Meta Ads</h4>
+                </div>
+                <div class="diff-item reveal reveal-delay-3">
+                    <div class="diff-check">✓</div>
+                    <h4>Atendimento Direto (sem robô)</h4>
+                </div>
+                <div class="diff-item reveal reveal-delay-4">
+                    <div class="diff-check">✓</div>
+                    <h4>Tecnologia Própria (CRM, LPs, Automações)</h4>
+                </div>
+                <div class="diff-item reveal reveal-delay-5">
+                    <div class="diff-check">✓</div>
+                    <h4>Foco em Resultado, não em Vaidade</h4>
+                </div>
+                <div class="diff-item reveal reveal-delay-6">
+                    <div class="diff-check">✓</div>
+                    <h4>Suporte Rápido via WhatsApp</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         FAQ
+         ═══════════════════════════════════════════════ -->
+    <section class="section faq" id="faq" aria-label="Perguntas frequentes">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Perguntas Frequentes</span>
+                <h2 class="section-title">Tire suas dúvidas</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        Quanto custa?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Cada projeto é personalizado. Agende uma conversa gratuita para receber um orçamento sob medida.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <button class="faq-question">
+                        Quanto tempo para ver resultados?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">No tráfego pago, os primeiros leads chegam nos primeiros dias. Para projetos de desenvolvimento, entregamos em 1-4 semanas.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <button class="faq-question">
+                        Funciona para meu tipo de negócio?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Atendemos desde clínicas e salões até e-commerces e prestadores de serviços. Se você precisa de mais clientes, podemos ajudar.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-3">
+                    <button class="faq-question">
+                        E se eu não gostar do resultado?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Oferecemos 7 dias de acompanhamento grátis. Se não entregar valor, você não paga.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-4">
+                    <button class="faq-question">
+                        Preciso entender de marketing?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Não! Cuidamos de tudo. Você foca no seu negócio, nós cuidamos do digital.</div>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-5">
+                    <button class="faq-question">
+                        Como funciona o suporte?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Atendimento direto via WhatsApp. Sem robô, sem espera, sem burocracia.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         LEAD CAPTURE FORM
+         ═══════════════════════════════════════════════ -->
+    <section class="form-section" id="formulario" aria-label="Formulário de contato">
+        <div class="container">
+            <div class="form-wrapper reveal">
+                <h2 class="form-title">Pronto para Escalar seu Negócio?</h2>
+                <p class="form-sub">Preencha abaixo e receba um orçamento personalizado.</p>
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Seu WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(54) 99950-1820" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="servico">Tipo de Serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione o serviço desejado</option>
+                            <option value="Tráfego Pago">Tráfego Pago (Google/Meta Ads)</option>
+                            <option value="Landing Page / Site">Landing Page / Site</option>
+                            <option value="CRM / Automações">CRM / Automações</option>
+                            <option value="Pacote Completo">Pacote Completo</option>
+                            <option value="Outro">Outro / Não sei ainda</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span>Enviar pelo WhatsApp &rarr;</span>
+                    </button>
+                </form>
+                <p class="form-note">⚡ <strong>Respondemos em até 2 horas</strong></p>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 <span class="footer-brand">Sappium</span> &mdash; Soluções Digitais</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════
+         FLOATING WHATSAPP
+         ═══════════════════════════════════════════════ -->
+    <a href="https://wa.me/5554999501820?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Sappium."
+       target="_blank"
+       rel="noopener noreferrer"
+       class="whatsapp-float"
+       aria-label="Fale conosco pelo WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- ═══════════════════════════════════════════════
+         JAVASCRIPT
+         ═══════════════════════════════════════════════ -->
+    <script>
+        // ─── Scroll Reveal via IntersectionObserver ───
+        (function() {
+            var revealEls = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+                revealEls.forEach(function(el) { observer.observe(el); });
+            } else {
+                revealEls.forEach(function(el) { el.classList.add('visible'); });
+            }
+        })();
+
+        // ─── Counter Animation ───
+        (function() {
+            var counters = document.querySelectorAll('.metric-number[data-target]');
+            var animated = new Set();
+
+            function animateCounter(el) {
+                var target = parseInt(el.getAttribute('data-target'));
+                var duration = 2000;
+                var start = 0;
+                var startTime = null;
+
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    var progress = Math.min((timestamp - startTime) / duration, 1);
+                    // Ease out cubic
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    var current = Math.floor(eased * target);
+                    el.textContent = current;
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target;
+                        // Add suffix from sibling
+                        var suffix = el.parentElement.querySelector('.metric-suffix');
+                        if (suffix) {
+                            el.textContent = target + suffix.textContent;
+                            suffix.style.display = 'none';
+                        }
+                        // Or from data attribute
+                        var dataSuffix = el.getAttribute('data-suffix');
+                        if (dataSuffix) {
+                            el.textContent = target + dataSuffix;
+                        }
+                    }
+                }
+                requestAnimationFrame(step);
+            }
+
+            if ('IntersectionObserver' in window) {
+                var counterObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting && !animated.has(entry.target)) {
+                            animated.add(entry.target);
+                            animateCounter(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                counters.forEach(function(el) { counterObserver.observe(el); });
+            }
+        })();
+
+        // ─── FAQ Accordion ───
+        (function() {
+            var questions = document.querySelectorAll('.faq-question');
+            questions.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var item = this.parentElement;
+                    var isActive = item.classList.contains('active');
+                    // Close all
+                    document.querySelectorAll('.faq-item.active').forEach(function(faq) {
+                        faq.classList.remove('active');
+                    });
+                    // Toggle current
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        })();
+
+        // ─── Form → WhatsApp ───
+        (function() {
+            var form = document.getElementById('leadForm');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var nome = document.getElementById('nome').value.trim();
+                var whatsapp = document.getElementById('whatsapp').value.trim();
+                var servico = document.getElementById('servico').value;
+
+                var msg = 'Olá! Meu nome é ' + nome + '.\n' +
+                          'WhatsApp: ' + whatsapp + '\n' +
+                          'Serviço de interesse: ' + servico + '\n\n' +
+                          'Gostaria de receber um orçamento personalizado!';
+
+                var encoded = encodeURIComponent(msg);
+                var phone = '5554999501820'; // Replace with actual number
+                window.open('https://wa.me/' + phone + '?text=' + encoded, '_blank');
+            });
+        })();
+
+        // ─── WhatsApp input mask (basic) ───
+        (function() {
+            var input = document.getElementById('whatsapp');
+            input.addEventListener('input', function(e) {
+                var v = e.target.value.replace(/\D/g, '');
+                if (v.length > 11) v = v.substring(0, 11);
+                if (v.length > 7) {
+                    v = '(' + v.substring(0,2) + ') ' + v.substring(2,7) + '-' + v.substring(7);
+                } else if (v.length > 2) {
+                    v = '(' + v.substring(0,2) + ') ' + v.substring(2);
+                } else if (v.length > 0) {
+                    v = '(' + v;
+                }
+                e.target.value = v;
+            });
+        })();
+    </script>
+</body>
+</html>
